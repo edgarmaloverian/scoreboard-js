@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>Scoreboard</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="timer">Not started</div>
+    <div id="Player1Name" onclick="EnterPlayer1Name()">Player 1</div>
+    <div id="Player2Name" onclick="EnterPlayer2Name()">Player 2</div>
+<div id="scores" class="scores">
+    <div id="Player1Score" class="score">147</div>
+    <div id="Player2Score" class="score">100</div>
+</div>
+    <button id="startbutton" onclick="startStopFrame()" >Start new frame</button>
+    <button id="shot" onclick="shot()" >Zero Points</button>
+ <div class="balls">
+    <div class="ball red" onclick="red()">1</div>
+    <div class="ball yellow" onclick="yellow()">2</div>
+    <div class="ball green" onclick="green()">3</div>
+    <div class="ball brown" onclick="brown()">4</div>
+    <div class="ball blue" onclick="blue()">5</div>
+    <div class="ball pink" onclick="pink()">6</div>
+    <div class="ball black" onclick="black()">7</div>
+    <div class="ball red" onclick="redF()">F4</div>
+    <div class="ball blue" onclick="blueF()">F5</div>
+    <div class="ball pink" onclick="pinkF()">F6</div>
+    <div class="ball black" onclick="blackF()">F7</div>
+</div>  
+</body>
