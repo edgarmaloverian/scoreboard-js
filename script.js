@@ -1,60 +1,24 @@
 /*
-Whole business in this page happens around "frame" datastore, which
+Whole business in this page happens around "frame" object, which
 is basically configuration and event log for the frame.
 TBD: Configuration
 
-Events: full event log should be very detailed to make it possible 
-to extract all professional level metrics such as average shot time, 
-long pot or safety success. Logging professional way is very cumbersome, 
-therefore easy way to use without referee should be possible.
 */
 
 /* Let's initialize frame object */
-var frame = { "settings": 
-{
-"player1": "Player 1",
-"player2": "Player 2"
+var score1 = 0
+var score2 = 2
+var frame = []
+/* move array should start with player identifier, either 1 or 2  */
+var move = []
 
-}
-       };
+function ResetScore(){
+    score1 = 0
+    score2 = 0
+    PostScores()
+};
 
-function Timer()
-{
-    var countdown = Date()
-    document.getElementById("timer").textContent = countdown;
-}
-
-setInterval(Timer, 1000);
-
-function startFrame()
-{ 
-
-    document.getElementById('Player1Score').textContent = "0";
-    document.getElementById('Player2Score').textContent = "0";
-    document.getElementById("startbutton").textContent = "End Frame";
-}
-
-function stopFrame()
-{
-    document.getElementById("startbutton").textContent = "Start Frame";
-}
-
-function startStopFrame()
-{
- if (document.getElementById("startbutton").textContent == 'Start new frame') {
-     startFrame
-    }
-  else
-  {startFrame}
-}
-
-
-function EnterPlayer1Name(){
-    document.getElementById("Player1Name").innerText =
-     prompt("Please enter player's name", "Player 1");
-}
-
-function EnterPlayer2Name(){
-    document.getElementById("Player2Name").innerText =
-     prompt("Please enter player's name", "Player 2");
-}
+function PostScores(){
+    document.getElementById("Player1Score").innerHTML = score1
+    document.getElementById("Player2Score").innerHTML = score2
+ }

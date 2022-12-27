@@ -4,10 +4,16 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.scores
+{ 
+position: absolute;
+
+}
+
 .score
 {
     float: left;
-  font-size: 30em;  
+  font-size: 20vw;  
 }
 
 .balls {
