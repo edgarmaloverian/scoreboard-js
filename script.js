@@ -23,6 +23,27 @@ function ActivatePlayer(player) { /* 0 means change */
 document.getElementById("Activeplayer").innerHTML= activeplayer
 }
 
+function Score(points){
+    move = [activeplayer, points]
+    frame.push(move)
+    ReCalculate() 
+    PostScores()   
+}
+
+function ReCalculate(){
+    score1 = 0
+    score2 = 0
+    for (var i = 0; i < frame.length; i++) {
+        if (frame[i][0] == 1){
+            if (frame[i][1] < 0){ score2 = score2 - frame[i][1] }
+            else score1 = score1 + frame[i][1]
+        }
+        if (frame[i][0] == 2){
+            if (frame[i][1] < 0){ score1 = score1 - frame[i][1] }
+            else score2 = score2 + frame[i][1]
+        }
+    }
+}
 
 function ResetScore(){
     score1 = 0
