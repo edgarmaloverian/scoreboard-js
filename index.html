@@ -7,10 +7,13 @@
 
 <body>
     <button id="startbutton" onclick="ResetScore()" >Reset</button>
+    <div id="Activeplayer" >1</div>
     <div id="Player1Score" class="score">0</div>
     <div id="Player2Score" class="score">0</div>
- <div class="buttons">
 
+    <button id="player1" onclick="ActivatePlayer(1)" >Player1</button>
+    <button id="player2" onclick="ActivatePlayer(2)" >Player2</button>
+    <button id="playerswitch" onclick="ActivatePlayer(0)">Change</button>
     <div class="ball red" onclick="red()">1</div>
     <div class="ball yellow" onclick="yellow()">2</div>
     <div class="ball green" onclick="green()">3</div>
@@ -21,6 +24,5 @@
     <div class="ball red" onclick="redF()">F4</div>
     <div class="ball blue" onclick="blueF()">F5</div>
     <div class="ball pink" onclick="pinkF()">F6</div>
-    <div class="ball black" onclick="blackF()">F7</div>
-</div>  
+    <div class="ball black" onclick="blackF()">F7</div>  
 </body>
