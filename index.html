@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <head>
-    <title>Scoreboard</title>
+    <title>Snooker Scoreboard</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="Activeplayer" >1</div>
-    <div id="Player1Score" class="score">0</div>
-    <div id="Player2Score" class="score">0</div>
-    <div class="buttonpanel">
+    <div id="topspacer"></div>
+    <div id="Player1Score" class="score player1" onclick="ActivatePlayer(1)" >147</div>
+    <div id="Player2Score" class="score player2" onclick="ActivatePlayer(2)">147</div>
+    <div class="buttonpane">
       <button id="startbutton" onclick="ResetScore()" >Reset</button>
       <button id="player1" onclick="ActivatePlayer(1)" >Player1</button>
       <button id="player2" onclick="ActivatePlayer(2)" >Player2</button>
       <button id="playerswitch" onclick="ActivatePlayer(0)">Change</button>
+    </div>
+    <div class="ballpane">
       <button id="1" class="ball red" onclick="Score(1)">1</button>
       <button id="2" class="ball yellow" onclick="Score(2)">2</button>
       <button id="3" class="ball green" onclick="Score(3)">3</button>
@@ -27,5 +29,4 @@
       <button id="F7" class="ball black" onclick="Score(-7)">F7</button>
       <button id="undo" class="ball white" onclick="Undo()">undo</button>
     </div> 
-    <div class="ball"></div>
 </body>

@@ -2,19 +2,48 @@ body {
     display: grid;
     gap: 0.2rem;
     grid-template-columns: 1fr 1fr;
+    background-color: rgb(62, 62, 62);
 }
 
-.buttonpanel {
- grid-column-start: 1;
- grid-column-end: 3;
- background-image: radial-gradient(circle at top, green, black);
- padding: 1rem;
- border-radius: 0.3rem;
+#topspacer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.score {
+ background-color: black;
+ color: silver;
+ font-size: 25vw;
+ border-radius: 0.1em;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.player1 {
+  text-align: left;
+}
+
+.player2 {
+  text-align: right;  
+}
+
+.buttonpane {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: radial-gradient(circle at top, green, black);
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+.ballpane {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: radial-gradient(circle at top, green, black);
+    padding: 1rem;
+    border-radius: 0.3rem;
 }
 
 .ball {
-    height: 100px;
-    width: 100px;
+    height: 7vw;
+    width: 7vw;
     border-radius: 50%;    
     transform: rotate( 45deg);
 }
@@ -27,3 +56,4 @@ body {
 .blue {background-image: radial-gradient(circle at top, blue, 70%, black);}
 .pink {background-image: radial-gradient(circle at top, pink, 70%, black);}
 .black {background-image: radial-gradient(circle at top, rgb(50, 49, 49), 70%, black);}
+

@@ -1,2 +1,3 @@
 # scoreboard-js
-snooker scorekeeping for laptop screen
+work in progress
+snooker scorekeeping for the mobile/laptop screen
