@@ -2,26 +2,30 @@
 <head>
     <title>Scoreboard</title>
     <script src="script.js"></script>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <button id="startbutton" onclick="ResetScore()" >Reset</button>
     <div id="Activeplayer" >1</div>
     <div id="Player1Score" class="score">0</div>
     <div id="Player2Score" class="score">0</div>
-    <button id="player1" onclick="ActivatePlayer(1)" >Player1</button>
-    <button id="player2" onclick="ActivatePlayer(2)" >Player2</button>
-    <button id="playerswitch" onclick="ActivatePlayer(0)">Change</button>
-    <button id="1" onclick="Score(1)">1</button>
-    <button id="2" onclick="Score(2)">2</button>
-    <button id="3" onclick="Score(3)">3</button>
-    <button id="4" onclick="Score(4)">4</button>
-    <button id="5" onclick="Score(5)">5</button>
-    <button id="6" onclick="Score(6)">6</button>
-    <button id="7" onclick="Score(7)">7</button>
-    <button id="F4" onclick="Score(-4)">F4</button>
-    <button id="F5" onclick="Score(-5)">F5</button>
-    <button id="F6" onclick="Score(-6)">F6</button>
-    <button id="F7" onclick="Score(-7)">F7</button>  
+    <div class="buttonpanel">
+      <button id="startbutton" onclick="ResetScore()" >Reset</button>
+      <button id="player1" onclick="ActivatePlayer(1)" >Player1</button>
+      <button id="player2" onclick="ActivatePlayer(2)" >Player2</button>
+      <button id="playerswitch" onclick="ActivatePlayer(0)">Change</button>
+      <button id="1" class="ball red" onclick="Score(1)">1</button>
+      <button id="2" class="ball yellow" onclick="Score(2)">2</button>
+      <button id="3" class="ball green" onclick="Score(3)">3</button>
+      <button id="4" class="ball brown" onclick="Score(4)">4</button>
+      <button id="5" class="ball blue" onclick="Score(5)">5</button>
+      <button id="6" class="ball pink" onclick="Score(6)">6</button>
+      <button id="7" class="ball black" onclick="Score(7)">7</button>
+      <button id="F4" class="ball red" onclick="Score(-4)">F4</button>
+      <button id="F5" class="ball blue" onclick="Score(-5)">F5</button>
+      <button id="F6" class="ball pink" onclick="Score(-6)">F6</button>
+      <button id="F7" class="ball black" onclick="Score(-7)">F7</button>
+      <button id="undo" class="ball white" onclick="Undo()">undo</button>
+    </div> 
+    <div class="ball"></div>
 </body>

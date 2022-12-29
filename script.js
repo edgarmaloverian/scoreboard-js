@@ -45,6 +45,12 @@ function ReCalculate(){
     }
 }
 
+function Undo() {
+    frame.pop()
+    ReCalculate() 
+    PostScores()
+}
+
 function ResetScore(){
     score1 = 0
     score2 = 0
