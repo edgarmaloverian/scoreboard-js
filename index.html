@@ -6,14 +6,12 @@
 </head>
 
 <body>
-    <div id="topspacer"></div>
-    <div id="Player1Score" class="score player1" onclick="ActivatePlayer(1)" >147</div>
-    <div id="Player2Score" class="score player2" onclick="ActivatePlayer(2)">147</div>
+    <div id="player1name" class="playername" onclick="setPlayer1Name()">Player 1</div>
+    <div id="player2name" class="playername" onclick="setPlayer2Name()">Player 2</div>
+    <div id="Player1Score" class="score player1" onclick="ActivatePlayer(1)" >0</div>
+    <div id="Player2Score" class="score player2" onclick="ActivatePlayer(2)">0</div>
     <div class="buttonpane">
-      <button id="startbutton" onclick="ResetScore()" >Reset</button>
-      <button id="player1" onclick="ActivatePlayer(1)" >Player1</button>
-      <button id="player2" onclick="ActivatePlayer(2)" >Player2</button>
-      <button id="playerswitch" onclick="ActivatePlayer(0)">Change</button>
+      <button id="startbutton" onclick="ResetScore()" >Reset</button>   
     </div>
     <div class="ballpane">
       <button id="1" class="ball red" onclick="Score(1)">1</button>

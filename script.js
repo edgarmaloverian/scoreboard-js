@@ -13,6 +13,15 @@ var frame = []
 /* move array should start with player identifier, either 1 or 2  */
 var move = []
 
+function setPlayer1Name() {
+    Player1Name = prompt("Player 1 name")
+    document.getElementById("player1name").innerHTML = Player1Name
+}
+function setPlayer2Name() {
+    Player2Name = prompt("Player 2 name")
+    document.getElementById("player2name").innerHTML = Player2Name
+}
+
 function ActivatePlayer(player) { /* 0 means change */
     if (player == 1) {activeplayer = 1}
     if (player == 2) {activeplayer = 2}
@@ -20,7 +29,14 @@ function ActivatePlayer(player) { /* 0 means change */
         if (activeplayer == 2) {activeplayer = 1}
         else if (activeplayer == 1) {activeplayer = 2}
     }
-document.getElementById("Activeplayer").innerHTML= activeplayer
+    if (activeplayer == 1){
+        document.getElementById("Player1Score").style.color = "yellow";
+        document.getElementById("Player2Score").style.color = "grey";
+    }
+    if (activeplayer == 2){
+        document.getElementById("Player2Score").style.color = "yellow";
+        document.getElementById("Player1Score").style.color = "grey";
+    }
 }
 
 function Score(points){

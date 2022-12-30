@@ -5,9 +5,10 @@ body {
     background-color: rgb(62, 62, 62);
 }
 
-#topspacer {
-    grid-column-start: 1;
-    grid-column-end: 3;
+.playername {
+    font-size: 3vw;
+    color: silver;
+    text-align: center;
 }
 
 .score {
@@ -45,7 +46,9 @@ body {
     height: 7vw;
     width: 7vw;
     border-radius: 50%;    
-    transform: rotate( 45deg);
+    border: 0em;
+    font-size: 3vw;
+
 }
 
 .white {background-image: radial-gradient(circle at top, silver, 70%, black);}
